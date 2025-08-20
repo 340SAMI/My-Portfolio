@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Personal portfolio – static clone template" />
+  <title>Your Name — Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="alternate icon" href="assets/favicon.png" />
+
+  <!-- Core styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- GSAP & Plugins -->
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollToPlugin.min.js"></script>
+
+  <!-- Your App JS -->
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#home" class="brand"><span class="brand-mark"></span><span class="brand-text">PORTFOLIO</span></a>
+      <input type="checkbox" id="nav-check" class="nav-check" aria-hidden="true" />
+      <label class="nav-toggle" for="nav-check"></label>
+      <nav id="site-nav" class="site-nav">
+        <ul>
+          <li><a href="#home" data-scroll>Home</a></li>
+          <li><a href="#about" data-scroll>About</a></li>
+          <li><a href="#skills" data-scroll>Skills</a></li>
+          <li><a href="#projects" data-scroll>Projects</a></li>
+          <li><a href="#features" data-scroll>Features</a></li>
+          <li><a href="#faq" data-scroll>FAQ</a></li>
+          <li><a href="#contact" data-scroll>Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="home" class="section hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Designer • Developer • Problem-solver</p>
+          <h1 class="hero-title">I build <span class="dynamic-word"></span></h1>
+          <p class="hero-sub">Clean code, thoughtful design, measurable results.</p>
+          <div class="hero-cta">
+            <a class="button primary" href="#projects">See Projects</a>
+            <a class="button ghost" href="#contact">Hire Me</a>
+          </div>
+        </div>
+        <div class="hero-visual"><div class="hero-orb"></div></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about">
+      <div class="container grid-2">
+        <div class="about-media">
+          <figure class="frame">
+            <img src="https://picsum.photos/720/480?grayscale" alt="Portrait placeholder" loading="lazy" />
+          </figure>
+        </div>
+        <div class="about-copy">
+          <h2>About Me</h2>
+          <p>
+            I’m a Computer Science & Engineering student focused on performance, accessibility, and maintainable architectures.
+          </p>
+          <ul class="pill-list">
+            <li>JavaScript</li><li>TypeScript</li><li>Node.js</li>
+            <li>CSS Architecture</li><li>Web Performance</li><li>Accessibility</li>
+          </ul>
+          <div class="stats">
+            <div class="stat"><span class="stat-num">1+</span><span class="stat-label">Years Experience</span></div>
+            <div class="stat"><span class="stat-num">01+</span><span class="stat-label">Projects</span></div>
+            <div class="stat"><span class="stat-num">~1–2s</span><span class="stat-label">Time to Interactive</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <header class="section-head">
+          <h2>My Skills</h2>
+          <p>A quick look at my technical skills and coding journey.</p>
+        </header>
+        <div id="skills-list" class="skills-grid">
+          <!-- JS will populate these skill cards from JSON -->
+        </div>
+        <div class="cp-exposure">
+          <h3>Competitive Programming Profiles</h3>
+          <ul>
+            <li><a href="#">CodeChef</a></li>
+            <li><a href="#">HackerRank</a></li>
+            <li><a href="#">LeetCode</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <header class="section-head">
+          <h2>Projects</h2>
+          <p>Some of my recent work.</p>
+        </header>
+        <div id="projects-list" class="projects-grid">
+          <!-- JS will populate these project cards from JSON -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section features">
+      <div class="container">
+        <header class="section-head">
+          <h2>What I Do</h2>
+          <p>End-to-end product work from idea to shipped.</p>
+        </header>
+        <div class="cards">
+          <article class="card"><h3>Design Systems</h3><p>Token-driven UI libraries.</p></article>
+          <article class="card"><h3>Performance</h3><p>Core Web Vitals focused.</p></article>
+          <article class="card"><h3>Full-Stack</h3><p>API design to deploys.</p></article>
+          <article class="card"><h3>Consulting</h3><p>Audits and reviews.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section faq">
+      <div class="container">
+        <header class="section-head">
+          <h2>Frequently Asked Questions</h2>
+        </header>
+        <div class="faq-list">
+          <details class="faq-item"><summary>What services do you offer?</summary><div class="faq-body">End-to-end web product work.</div></details>
+          <details class="faq-item"><summary>Do you take on short engagements?</summary><div class="faq-body">Yes, sprints and audits available.</div></details>
+          <details class="faq-item"><summary>What’s your typical stack?</summary><div class="faq-body">Vanilla JS/TS, semantic HTML, modern CSS.</div></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="container grid-2">
+        <div class="contact-copy">
+          <h2>Let’s work together</h2>
+          <ul class="meta">
+            <li><strong>Email:</strong> aminulislamsamiofficial@gmail.com</li>
+            <li><strong>Location:</strong> Dhaka,Bangladesh</li>
+            <li><strong>Availability:</strong> Open for new work</li>
+          </ul>
+        </div>
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/xqalvqzl" method="POST">
+          <label><span>Name</span><input type="text" name="name" required></label>
+          <label><span>Email</span><input type="email" name="_replyto" required></label>
+          <label><span>Message</span><textarea name="message" rows="6" required></textarea></label>
+          <input type="hidden" name="_subject" value="New portfolio contact form submission" />
+          <button class="button primary" type="submit">Send Message</button>
+          <p id="form-status" class="form-status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2025</span> AI,SAMI. All rights reserved.</p>
+      <nav class="footer-nav"><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+    </div>
+  </footer>
+</body>
+</html>

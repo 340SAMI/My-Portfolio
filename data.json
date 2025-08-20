@@ -1,0 +1,57 @@
+{
+  "dynamicWords": ["websites", "apps", "solutions", "experiences"],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": 90,
+      "description": "Confident with semantic HTML and responsive layouts"
+    },
+    {
+      "name": "CSS",
+      "level": 85,
+      "description": "Flexbox, Grid, animations, and design systems"
+    },
+    {
+      "name": "JavaScript",
+      "level": 75,
+      "description": "DOM, ES6+, async programming"
+    },
+    {
+      "name": "Python",
+      "level": 70,
+      "description": "Data scripting, problem solving"
+    },
+    {
+      "name": "C++",
+      "level": 65,
+      "description": "Competitive programming & algorithms"
+    },
+    {
+      "name": "TypeScript",
+      "level": 55,
+      "description": "Static typing for cleaner large-scale JS"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Portfolio Website",
+      "description": "A responsive personal portfolio built with HTML, CSS, and JavaScript.",
+      "link": "#"
+    },
+    {
+      "title": "Weather App",
+      "description": "API-based app providing live weather data with clean UI.",
+      "link": "#"
+    },
+    {
+      "title": "Blog Platform",
+      "description": "Full-stack blog using Node.js and MongoDB with user authentication.",
+      "link": "#"
+    }
+  ],
+  "cpProfiles": [
+    { "name": "CodeChef", "url": "https://codeforces.com/profile/edge340" },
+    { "name": "HackerRank", "url": "https://www.hackerrank.com/profile/aminulislamsami1" },
+    { "name": "LeetCode", "url": "https://leetcode.com/u/d9AGJvOPpn/" }
+  ]
+}
